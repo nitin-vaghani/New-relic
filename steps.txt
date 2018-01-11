@@ -1,0 +1,33 @@
+New Relic
+
+
+https://rpm.newrelic.com/accounts/1845890/applications/setup#
+
+https://docs.newrelic.com/docs/agents/manage-apm-agents/installation/install-agent
+
+
+nitin.vaghani@imobdev.com / imobdev123
+
+Get your license key
+
+Your license key is: e62fad9a556409efa97ac1cf992bfe74dc2c2ec9
+
+Account ID : 1845890
+
+Debian-based (Debian, Ubuntu, etc.)
+
+GO TO YOUR TERMINAL WITH ROOT USER: 
+
+Get the key: >_ wget -O - https://download.newrelic.com/548C16BF.gpg | sudo apt-key add -
+
+Add our repository: >_ touch /etc/apt/sources.list.d/newrelic.list
+
+Paste This line: >_  echo "deb http://apt.newrelic.com/debian/ newrelic non-free" > /etc/apt/sources.list.d/newrelic.list
+
+Install the package and configure it: 
+1 . >_ apt-get update
+2.  >_ apt-get install newrelic-php5
+
+Restart your httpd or ngix server
+
+>_ service apache2 restart
