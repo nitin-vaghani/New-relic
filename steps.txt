@@ -31,3 +31,15 @@ Install the package and configure it:
 Restart your httpd or ngix server
 
 >_ service apache2 restart
+
+
+Add below line at the end of php.ini
+Paste This line: > newrelic.license="e62fad9a556409efa97ac1cf992bfe74dc2c2ec9"
+
+
+
+chech phpinfo();
+
+New Relic Version 	7.7.0.203 ("yershova" - "5fedc700f64a")
+
+Got?
